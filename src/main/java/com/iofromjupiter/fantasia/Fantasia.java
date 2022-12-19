@@ -1,5 +1,6 @@
 package com.iofromjupiter.fantasia;
 
+import com.iofromjupiter.fantasia.block.ModBlocks;
 import com.iofromjupiter.fantasia.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -22,6 +23,8 @@ public class Fantasia {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 

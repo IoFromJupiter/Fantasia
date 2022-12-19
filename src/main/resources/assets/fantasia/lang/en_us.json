@@ -1,4 +1,10 @@
 {
-  "item.fantasia.opal": "Opal",
-  "item.fantasia.cut_opal": "Cut Opal"
+  "item.fantasia.tungsten_ingot": "Tungsten Ingot",
+  "item.fantasia.raw_tungsten": "Raw Tungsten",
+
+  "block.fantasia.tungsten_block": "Block of Tungsten",
+  "block.fantasia.tungsten_ore": "Tungsten Ore",
+  "block.fantasia.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
+
+  "itemGroup.fantasia_materials": "Fantasia Materials"
 }
