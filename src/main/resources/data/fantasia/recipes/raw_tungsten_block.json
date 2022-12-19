@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "fantasia:raw_tungsten"
+    }
+  },
+  "result": {
+    "item": "fantasia:raw_tungsten_block"
+  }
+}

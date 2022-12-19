@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "fantasia:tungsten_block",
+    "fantasia:raw_tungsten_block",
+    "fantasia:tungsten_ore",
+    "fantasia:deepslate_tungsten_ore"
+  ]
+}

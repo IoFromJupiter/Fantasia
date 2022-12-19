@@ -9,6 +9,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -28,15 +29,20 @@ public class ModBlocks {
             .strength(6f)
             .requiresCorrectToolForDrops()), ModCreativeModeTab.FANTASIA_MATERIALS);
 
-public static final RegistryObject<Block> TUNGSTEN_ORE = registerBlock("tungsten_ore.json",
+    public static final RegistryObject<Block> RAW_TUNGSTEN_BLOCK = registerBlock("raw_tungsten_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
+            .strength(6f)
+            .requiresCorrectToolForDrops().sound(SoundType.METAL)), ModCreativeModeTab.FANTASIA_MATERIALS);
+
+    public static final RegistryObject<Block> TUNGSTEN_ORE = registerBlock("tungsten_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
             .strength(6f)
             .requiresCorrectToolForDrops(), UniformInt.of(3,7)), ModCreativeModeTab.FANTASIA_MATERIALS);
 
-public static final RegistryObject<Block> DEEPSLATE_TUNGSTEN_ORE = registerBlock("deepslate_tungsten_ore",
+    public static final RegistryObject<Block> DEEPSLATE_TUNGSTEN_ORE = registerBlock("deepslate_tungsten_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
             .strength(6f)
-            .requiresCorrectToolForDrops(), UniformInt.of(3,7)), ModCreativeModeTab.FANTASIA_MATERIALS);
+            .requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE), UniformInt.of(3,7)), ModCreativeModeTab.FANTASIA_MATERIALS);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

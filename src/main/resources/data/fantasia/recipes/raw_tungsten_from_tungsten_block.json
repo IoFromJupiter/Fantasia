@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "raw_tungsten",
+  "ingredients": [
+    {
+      "item": "fantasia:raw_tungsten_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "fantasia:raw_tungsten"
+  }
+}
